@@ -1,0 +1,49 @@
+/* CSS HEX */
+:root {
+  --carbon-black: #09090b;
+  --charcoal-zinc: #141418;
+  --zinc-border: #27272a;
+  --electric-violet: #8b5cf6;
+  --indigo-accent: #6366f1;
+  --mint-green: #22c55e;
+  --warm-amber: #f59e0b;
+  --neon-rose: #fb7185;
+  --crisp-white: #fafafa;
+  --neutral-zinc: #a1a1aa;
+
+  /* CSS HSL */
+  --carbon-black-hsl: hsla(240, 10%, 4%, 1);
+  --charcoal-zinc-hsl: hsla(240, 9%, 9%, 1);
+  --zinc-border-hsl: hsla(240, 5%, 16%, 1);
+  --electric-violet-hsl: hsla(258, 90%, 66%, 1);
+  --indigo-accent-hsl: hsla(239, 84%, 67%, 1);
+  --mint-green-hsl: hsla(142, 71%, 45%, 1);
+  --warm-amber-hsl: hsla(38, 92%, 50%, 1);
+  --neon-rose-hsl: hsla(351, 95%, 71%, 1);
+  --crisp-white-hsl: hsla(0, 0%, 98%, 1);
+  --neutral-zinc-hsl: hsla(240, 5%, 65%, 1);
+
+  /* Gradients */
+  --gradient-cta: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  --gradient-hover: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+  --gradient-brand: linear-gradient(90deg, #8b5cf6, #6366f1);
+  --gradient-safe: linear-gradient(135deg, #22c55e 0%, #10b981 100%);
+  --gradient-radial: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.15), transparent 70%);
+}
+
+/* SCSS Reference Variables */
+/*
+$carbon-black: #09090bff;
+$charcoal-zinc: #141418ff;
+$zinc-border: #27272aff;
+$electric-violet: #8b5cf6ff;
+$indigo-accent: #6366f1ff;
+$mint-green: #22c55eff;
+$warm-amber: #f59e0bff;
+$neon-rose: #fb7185ff;
+$crisp-white: #fafafaff;
+$neutral-zinc: #a1a1aaff;
+
+$gradient-cta: linear-gradient(135deg, #8b5cf6, #6366f1);
+$gradient-brand: linear-gradient(90deg, #8b5cf6, #6366f1);
+*/

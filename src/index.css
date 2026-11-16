@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #09090B;
+    --card-surface: #141418;
+    --card-border: #27272A;
+
+    /* Obsidian & Electric Violet Palette */
+    --carbon-black: #09090B;
+    --charcoal-zinc: #141418;
+    --zinc-border: #27272A;
+    --electric-violet: #8B5CF6;
+    --indigo-accent: #6366F1;
+    --mint-green: #22C55E;
+    --warm-amber: #F59E0B;
+    --neon-rose: #FB7185;
+    --crisp-white: #FAFAFA;
+    --neutral-zinc: #A1A1AA;
+
+    --gradient-cta: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
+    --gradient-hover: linear-gradient(135deg, #7C3AED 0%, #4F46E5 100%);
+    --gradient-brand: linear-gradient(90deg, #8B5CF6, #6366F1);
+    --gradient-safe: linear-gradient(135deg, #22C55E 0%, #10B981 100%);
+  }
+
+  html.light {
+    --bg-main: #FAFAFA;
+    --card-surface: #FFFFFF;
+    --card-border: #E4E4E7;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+    background-color: #09090B;
+    color: #FAFAFA;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B5CF6;
+}
+
+/* Glassmorphism subtle helper */
+.glass-panel {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Print Styles for Addendum */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  header, nav, .no-print, button, .action-bar {
+    display: none !important;
+  }
+
+  .print-area {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #09090B !important;
+  }
+}
